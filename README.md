@@ -6,11 +6,12 @@
 ### Put global index settings with ./put.sh global.json  
 
 ### Put template for deployments index by executing ./put.sh deployments.json  
-
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/put.sh.PNG)  
+ 
 ##### !Use   
 ``` sed -i -e 's/\r$//' scriptname.sh ```  
 ##### if you have  '/bin/bash^M: bad interpreter: No such file or directory'!  
- ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/put.sh.PNG)  
+  
  
 ### Deploy first version of application   
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/first%20release.PNG)  
