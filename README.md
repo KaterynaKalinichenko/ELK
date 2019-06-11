@@ -28,3 +28,23 @@
  
 ### Add settings for graph construction
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/1st%20deploy%20visual.PNG)
+
+##  Filebeat installation for Nginx
+
+### First we need to install filebeat 
+ ![alt-текст]()
+ ![alt-текст]()
+ ![alt-текст]()
+ ![alt-текст]()
+
+### Check our module list 
+ ![alt-текст]()
+### Enable the nginx module
+ ![alt-текст]()
+ 
+### Check the configuration file is syntactically correct
+ ![alt-текст]()
+ 
+### Start adn enable filebeat
+ ![alt-текст]()
+ ![alt-текст]()
