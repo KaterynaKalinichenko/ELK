@@ -32,19 +32,18 @@
 ##  Filebeat installation for Nginx
 
 ### First we need to install filebeat 
- ![alt-текст]()
- ![alt-текст]()
- ![alt-текст]()
- ![alt-текст]()
+  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb2.PNG)
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb3.PNG)
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20file4.PNG)
 
 ### Check our module list 
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/nginx%20list.PNG)
 ### Enable the nginx module
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/enable%20ng.PNG)
  
 ### Check the configuration file is syntactically correct
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/check%20correct.PNG)
  
 ### Start adn enable filebeat
- ![alt-текст]()
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/enable%20%26%26%20start%20filebeast.PNG)
+ 
