@@ -3,14 +3,14 @@
 ## Check ELK stack state by executing docker-compose ps  
 
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/docker%20ps.PNG)  
-###### When we see that everything is running, we proceed to the next step.
+##### When we see that everything is running, we proceed to the next step.
 
 ### Put global index settings with ./put.sh global.json  
 ### Put template for deployments index by executing ./put.sh deployments.json  
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/put.sh.PNG)  
  
 ##### !Use
-``` sed -i -e 's/\r$//' scriptname.sh ```  
+``` sed -i -e 's/\r$//' scriptname.sh ```    
 ##### if you have  '/bin/bash^M: bad interpreter: No such file or directory'!  
   
 ### Deploy first version of application   
@@ -18,22 +18,22 @@
 ###### When we see that all the petshop components are running, we can check the result of our work.
 
 ### Here the first Kibana page  
-###### Go to the Kibana main page and check that it works and we can perform actions with it.
+##### Go to the Kibana main page and check that it works and we can perform actions with it.
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/kibana%20show%20page.PNG)
 
 ### Creating index pattern
-###### We will work with patterns
+##### We will work with patterns
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/logstash%20create.PNG)
 
 ###  Choose visualisation  
-###### We need to choose the most convenient visualization. For me personally, this is exactly its "line".
+##### We need to choose the most convenient visualization. For me personally, this is exactly its "line".
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/visualization.PNG)
  
-###### Add settings for graph construction
+##### Add settings for graph construction
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/config1.PNG)
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/config2.PNG)
 
-###### And and build a beautiful graph
+##### And and build a beautiful graph
 ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/graphnew.PNG)
 
 #### When we finished first deploy let's go to the next!
@@ -63,13 +63,13 @@
 ###  Filebeat installation
 
 ### First we need to install filebeat 
-###### for this use 
+##### for this use 
 ``` sudo curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.1.1-amd64.deb  ``` 
 ``` sudo dpkg -i filebeat-7.1.1-amd64.deb ```
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/fileb/1install.PNG)
 
 ##### Configure filebeat.yml in /etc/filebeat and turn on our logstash
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/fileb/2configure.PNG)
 
 ##### In Elasticsearch, index templates are used to define settings and mappings that determine how fields should be analyzed.
 ##### The recommended index template file for Filebeat is installed by the Filebeat packages. If you accept the default configuration in the filebeat.yml config file, Filebeat loads the template automatically after successfully connecting to Elasticsearch. If the template already exists, it’s not overwritten unless you configure Filebeat to do so.
@@ -77,7 +77,7 @@
  
 ##### Use this command for ubuntu.
 ``` filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'```
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/fileb/3%20load%20temp.PNG)
 
 ### Check our module list 
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/nginx%20list.PNG)
