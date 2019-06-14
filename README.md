@@ -60,16 +60,24 @@
 
 ##### Now we have full monitoring and we will not miss any errors related to our product.
 
-
-
-
-
-##  Filebeat installation for Nginx
+###  Filebeat installation
 
 ### First we need to install filebeat 
- ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb2.PNG)
- ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb3.PNG)
- ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20file4.PNG)
+###### for this use 
+``` sudo curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.1.1-amd64.deb  ``` 
+``` sudo dpkg -i filebeat-7.1.1-amd64.deb ```
+![alt-текст]()
+
+##### Configure filebeat.yml in /etc/filebeat and turn on our logstash
+![alt-текст]()
+
+##### In Elasticsearch, index templates are used to define settings and mappings that determine how fields should be analyzed.
+##### The recommended index template file for Filebeat is installed by the Filebeat packages. If you accept the default configuration in the filebeat.yml config file, Filebeat loads the template automatically after successfully connecting to Elasticsearch. If the template already exists, it’s not overwritten unless you configure Filebeat to do so.
+##### So let's do this!   
+ 
+##### Use this command for ubuntu.
+``` filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'```
+![alt-текст]()
 
 ### Check our module list 
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/nginx%20list.PNG)
@@ -82,7 +90,11 @@
 ### Start adn enable filebeat
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/enable%20%26%26%20start%20filebeast.PNG)
 
+
 # Install Metricbeat
+##### You should install Metricbeat as close as possible to the service you want to monitor. For example, if you have four servers with MySQL running, it’s recommended that you run Metricbeat on each server. 
+##### This allows Metricbeat to access your service from localhost and does not cause any additional network traffic or prevent Metricbeat from collecting metrics when there are network problems. 
+##### Metrics from multiple Metricbeat instances will be combined on the Elasticsearch server.
 
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/install%20metri.PNG)
 
@@ -94,14 +106,17 @@
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/dock%20pull%20metri.PNG)
 
 ### Configure Metricbeaton Docker
+
 ##### The Docker image provides several methods for configuring Metricbeat. The conventional approach is to provide a configuration file via a volume mount, but it’s also possible to create a custom image with your configuration included
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/example%20config%20file.PNG)
  
 ### Volume-mounted configuration
+
 ##### We can configure Metricbeat on Docker is to provide metricbeat.docker.yml via a volume mount..
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/volume-mounted.PNG)
  
 ### Customize configuration
+
 ###### The metricbeat.docker.yml file is configured to deploy Beats modules based on the Docker labels applied to your containers.
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/customize.PNG)
 
