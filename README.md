@@ -30,9 +30,28 @@
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/visualization.PNG)
  
 ###### Add settings for graph construction
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/config1.PNG)
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/config2.PNG)
+
 ###### And and build a beautiful graph
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/graphnew.PNG)
+
+#### When we finished first deploy let's go to the next!
 ![alt-текст]()
+
+##### And do the same one
+##### Create graph. But we can see that something has changed on this slide.
+![alt-текст]()
+
+##### Next let's see 3th deploy
+![alt-текст]()
+
+##### Everything went well and we should have updates on our slide.
+![alt-текст]()
+
+##### Its huge difference.
+
+
 
 
 
