@@ -54,15 +54,20 @@
 ## Running Metricbeat on Docker
 
 ### Pulling the image  
+##### Obtaining Beats for Docker is as simple as issuing a simplest command against the Elastic Docker registry.
+
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/dock%20pull%20metri.PNG)
 
 ### Configure Metricbeaton Docker
+##### The Docker image provides several methods for configuring Metricbeat. The conventional approach is to provide a configuration file via a volume mount, but it’s also possible to create a custom image with your configuration included
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/example%20config%20file.PNG)
  
 ### Volume-mounted configuration
+##### We can configure Metricbeat on Docker is to provide metricbeat.docker.yml via a volume mount..
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/volume-mounted.PNG)
  
 ### Customize configuration
+###### The metricbeat.docker.yml file is configured to deploy Beats modules based on the Docker labels applied to your containers.
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/customize.PNG)
 
 
