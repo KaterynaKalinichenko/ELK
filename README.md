@@ -37,19 +37,27 @@
 ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/graphnew.PNG)
 
 #### When we finished first deploy let's go to the next!
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/second%20release.PNG)
 
 ##### And do the same one
 ##### Create graph. But we can see that something has changed on this slide.
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/graph%202%20dep.PNG)
 
 ##### Next let's see 3th deploy
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/3th%20rel.PNG)
 
 ##### Everything went well and we should have updates on our slide.
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/3%20graph.PNG)
+##### Its huge difference.
+
+#### We will add our graph to the dashboard, so that we can easily view the information that we need.
 ![alt-текст]()
 
-##### Its huge difference.
+##### Next, save our "screenshot", go to the "Dashboard" tab, create a new dashboard, select our graph in the saved information.
+##### And now we can manipulate with it.
+![alt-текст]()
+
+##### Now we have full monitoring and we will not miss any errors related to our product.
 
 
 
