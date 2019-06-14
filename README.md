@@ -40,7 +40,7 @@
 ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/second%20release.PNG)
 
 ##### And do the same one
-##### Create graph. But we can see that something has changed on this slide.
+##### Create graph. But we can see that something has changed on this slide. But the error was not fixed and it still exists.
 ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/graph%202%20dep.PNG)
 
 ##### Next let's see 3th deploy
@@ -51,11 +51,12 @@
 ##### Its huge difference.
 
 #### We will add our graph to the dashboard, so that we can easily view the information that we need.
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/dash%201.PNG)
 
 ##### Next, save our "screenshot", go to the "Dashboard" tab, create a new dashboard, select our graph in the saved information.
+
 ##### And now we can manipulate with it.
-![alt-текст]()
+![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/new/dash%20graph.PNG)
 
 ##### Now we have full monitoring and we will not miss any errors related to our product.
 
