@@ -49,22 +49,22 @@
 
 # Install Metricbeat
 
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/install%20metri.PNG)
 
 ## Running Metricbeat on Docker
+
 ### Pulling the image  
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/dock%20pull%20metri.PNG)
 
 ### Configure Metricbeaton Docker
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/example%20config%20file.PNG)
  
 ### Volume-mounted configuration
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/volume-mounted.PNG)
  
 ### Customize configuration
- ![alt-текст]()
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/customize.PNG)
 
-### 
 
  
  
