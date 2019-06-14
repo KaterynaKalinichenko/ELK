@@ -120,7 +120,7 @@
  
 ### Customize configuration
 
-###### The metricbeat.docker.yml file is configured to deploy Beats modules based on the Docker labels applied to your containers.
+##### The metricbeat.docker.yml file is configured to deploy Beats modules based on the Docker labels applied to your containers.
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/metr/customize.PNG)
 
 
