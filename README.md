@@ -32,7 +32,7 @@
 ##  Filebeat installation for Nginx
 
 ### First we need to install filebeat 
-  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb2.PNG)
+ ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb2.PNG)
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20fileb3.PNG)
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/install%20file4.PNG)
 
@@ -46,4 +46,25 @@
  
 ### Start adn enable filebeat
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/enable%20%26%26%20start%20filebeast.PNG)
+
+# Install Metricbeat
+
+ ![alt-текст]()
+
+## Running Metricbeat on Docker
+### Pulling the image  
+ ![alt-текст]()
+
+### Configure Metricbeaton Docker
+ ![alt-текст]()
+ 
+### Volume-mounted configuration
+ ![alt-текст]()
+ 
+### Customize configuration
+ ![alt-текст]()
+
+### 
+
+ 
  
