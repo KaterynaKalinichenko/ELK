@@ -1,33 +1,40 @@
 # ELK  
 
 ## Check ELK stack state by executing docker-compose ps  
+
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/docker%20ps.PNG)  
+###### When we see that everything is running, we proceed to the next step.
 
 ### Put global index settings with ./put.sh global.json  
-
 ### Put template for deployments index by executing ./put.sh deployments.json  
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/put.sh.PNG)  
  
-##### !Use   
+##### !Use
 ``` sed -i -e 's/\r$//' scriptname.sh ```  
 ##### if you have  '/bin/bash^M: bad interpreter: No such file or directory'!  
   
- 
 ### Deploy first version of application   
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/first%20release.PNG)  
+###### When we see that all the petshop components are running, we can check the result of our work.
 
 ### Here the first Kibana page  
-
+###### Go to the Kibana main page and check that it works and we can perform actions with it.
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/kibana%20show%20page.PNG)
 
 ### Creating index pattern
+###### We will work with patterns
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/logstash%20create.PNG)
 
 ###  Choose visualisation  
+###### We need to choose the most convenient visualization. For me personally, this is exactly its "line".
  ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/visualization.PNG)
  
-### Add settings for graph construction
- ![alt-текст](https://github.com/KaterynaKalinichenko/ELK/blob/master/images/1st%20deploy%20visual.PNG)
+###### Add settings for graph construction
+ ![alt-текст]()
+###### And and build a beautiful graph
+![alt-текст]()
+
+
 
 ##  Filebeat installation for Nginx
 
